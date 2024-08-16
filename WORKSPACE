@@ -111,6 +111,7 @@ load("@build_bazel_rules_nodejs//:index.bzl", "yarn_install")
 yarn_install(
     name = "npm",
     data = [
+        "//:.puppeteerrc.cjs",
         "//:.yarn/patches/@angular-bazel-https-9848736cf4.patch",
         "//:.yarn/patches/@bazel-concatjs-npm-5.8.1-1bf81df846.patch",
         "//:.yarn/patches/@bazel-jasmine-npm-5.8.1-3370fee155.patch",
